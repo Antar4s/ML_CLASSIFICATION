@@ -16,7 +16,7 @@
 <h5 align="center">
   
 ```bash
-$ git clone https://github.com/Antar4s/DATA-SCIENCE
+$ git clone https://github.com/Antar4s/ML_CLASSIFICATION
 ```
 </h6>
 
