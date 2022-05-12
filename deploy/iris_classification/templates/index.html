@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Classificação de Iris</title>
+</head>
+<body>
+    <h1>Classificação de Iris</h1>
+    <form action="{{ url_for('predict')}}" method="POST">
+    	<input type="text" name="sepal_length" placeholder="sepal_length" required="required" />
+        <input type="text" name="sepal_width" placeholder="sepal_width" required="required" />
+		<input type="text" name="petal_length" placeholder="petal_length" required="required" />
+		<input type="text" name="petal_width" placeholder="petal_width" required="required" />
+
+        <button type="submit" class="btn btn-primary btn-block btn-large">Predict</button>
+    </form>
+    <br>
+    {{ prediction_text }}
+    
+</body>
+</html>
