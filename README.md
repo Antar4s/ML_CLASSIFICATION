@@ -36,7 +36,7 @@ $ git clone https://github.com/Antar4s/ML_CLASSIFICATION
 
 ## II Classificação de Fraude
 > Detecção de fraude em transações de pagamento.
-### Base: <a href="https://archive.ics.uci.edu/ml/datasets/iris">Iris</a><br>Biblioteca: Sklearn<br>Algoritmo: DecisionTreeClassifier
+### Base:<br>Biblioteca: Sklearn<br>Algoritmo: DecisionTreeClassifier
 <br>
 <!-- BAR -->
 <hr>
