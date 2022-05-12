@@ -26,6 +26,14 @@ def predict():
         prediction_text = 'A espécie de flor é Virginica'
     return render_template("index.html", prediction_text = prediction_text) 
 
+if __name__ == "__main__":
+    app.run(debug=True)
+
+
+
+
+
+
     # sepal_length = request.form['sepal_length']
     # sepal_width = request.form['sepal_width']
     # petal_length = request.form['petal_length']
@@ -35,6 +43,3 @@ def predict():
     # classe = model.predict(teste)[0]
     # print(f'Classe predita: {classe}')
     # return render_template('index.html', classe=str(classe))
-
-if __name__ == "__main__":
-    app.run(debug=True)
