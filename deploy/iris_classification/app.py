@@ -14,14 +14,16 @@ def home():
 def predict():
     float_features = [float(x) for x in request.form.values()]
     features = [np.array(float_features)]
+    print(float_features)
+    print(features)
     prediction = model.predict(features)
 
     if 0 in prediction:
-        prediction_text = 'The Flower Species is Setosa'
+        prediction_text = 'A espécie de flor é Setosa'
     if 1 in prediction:
-        prediction_text = 'The Flower Species is Versicolor'
+        prediction_text = 'A espécie de flor é Versicolor'
     if 2 in prediction:
-        prediction_text = 'The Flower Species is Virginica'
+        prediction_text = 'A espécie de flor é Virginica'
     return render_template("index.html", prediction_text = prediction_text) 
 
     # sepal_length = request.form['sepal_length']

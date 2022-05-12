@@ -4,20 +4,57 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"> 
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Classificação de Iris</title>
 </head>
 <body>
-    <h1>Classificação de Iris</h1>
-    <form action="{{ url_for('predict')}}" method="POST">
-    	<input type="text" name="sepal_length" placeholder="sepal_length" required="required" />
-        <input type="text" name="sepal_width" placeholder="sepal_width" required="required" />
-		<input type="text" name="petal_length" placeholder="petal_length" required="required" />
-		<input type="text" name="petal_width" placeholder="petal_width" required="required" />
-
-        <button type="submit" class="btn btn-primary btn-block btn-large">Predict</button>
-    </form>
+    <h1 class="d-flex justify-content-center">Classificação de Iris</h1>
     <br>
-    {{ prediction_text }}
+    <div class="d-flex justify-content-center col-md-12">
+
+    <form action="{{ url_for('predict')}}"method="post">
+
+        <div class="form-group row">
+          <label for="sepal_length" class="col-4 col-form-label">Comprimento da Sépala</label> 
+          <div class="col-8">
+            <input type="text" name="sepal_length" placeholder="Comprimento da Sépala" class="form-control">
+          </div>
+        </div>
+
+        <div class="form-group row">
+          <label for="sepal_width" class="col-4 col-form-label">Largura da Sépala</label> 
+          <div class="col-8">
+            <input type="text" name="sepal_width" placeholder="Largura da Sépala" class="form-control">
+          </div>
+        </div>
+
+        <div class="form-group row">
+          <label for="petal_length" class="col-4 col-form-label">Comprimento da Pétala</label> 
+          <div class="col-8">
+            <input type="text" name="petal_length" placeholder="Comprimento da Pétala" class="form-control">
+          </div>
+        </div>
+
+        <div class="form-group row">
+          <label for="petal_width" class="col-4 col-form-label">Largura da Pétala</label> 
+          <div class="col-8">
+            <input type="text" name="petal_width" placeholder="Largura da Pétala" class="form-control">
+          </div>
+        </div> 
+
+        <div class="form-group row">
+          <div class="offset-4 col-8">
+            <button type="submit" class="btn btn-primary btn-block btn-large">Resultado</button>
+          </div>
+        </div>
+
+      </form>
+    </div>
+    <div class="d-flex justify-content-center col-md-12">
+        <h2> {{ prediction_text }} </h2>
+    </div>
+    <br>
     
 </body>
 </html>
