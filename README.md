@@ -30,13 +30,13 @@ $ git clone https://github.com/Antar4s/ML_CLASSIFICATION
 <!-- STRUCTURE  1 -->
 ## I Classificação de Iris
 > O conjunto de dados contém 3 classes de 50 instâncias cada, onde cada classe se refere a um tipo de planta de íris.
-### Base: <a href="https://archive.ics.uci.edu/ml/datasets/iris">Iris</a><br>Biblioteca: XGBoost<br>Algoritmo: Classifier
+### Base: <a href="https://archive.ics.uci.edu/ml/datasets/iris">Iris</a><br>Biblioteca: XGBoost<br>Algoritmo: Classifier<br>Notebook: <a href="https://github.com/Antar4s/ML_CLASSIFICATION/blob/main/notebook/01_Iris_classification.ipynb">Clique Aqui</a>
 ### Deploy:<br>- Entre no diretório do projeto<br> -  Rode o comando 'pip install requirements.txt' para instalação das dependências<br>- Rode o comando 'python.exe .\app.py' para iniciar o prpjeto<br>- URL padrão: http://127.0.0.1:5000
 <br>
 
 ## II Classificação de Fraude
 > Detecção de fraude em transações de pagamento.
-### Base:<br>Biblioteca: Sklearn<br>Algoritmo: DecisionTreeClassifier
+### Base: <a href="https://github.com/Antar4s/ML_CLASSIFICATION/blob/main/data/02_fraud_classification.csv"> Fraud Classification</a><br>Biblioteca: Sklearn<br>Algoritmo: DecisionTreeClassifier<br>Notebook: <a href="https://github.com/Antar4s/ML_CLASSIFICATION/blob/main/notebook/02_fraud_classification.ipynb">Clique Aqui</a>
 <br>
 <!-- BAR -->
 <hr>
